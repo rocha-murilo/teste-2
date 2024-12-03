@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário - Gerencie seus eventos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+    <main class="container">
+        <div class="header">
+            <div class="logo">
+                <div class="calendar-icon">
+                    <svg viewBox="0 0 24 24" fill="#4285f4">
+                        <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM7 11h5v5H7z"/>
+                    </svg>
+                </div>
+                <h1>Calendário de Eventos</h1>
+                <p>Organize seus eventos e compromissos</p>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <a href="index.html">Painéis</a>
+            <a href="calendar.html" class="active">Calendário</a>
+            <a href="files.html">Arquivos</a>
+        </nav>
+
+        <div class="calendar">
+            <div class="calendar-header">
+                <h2>dezembro 2024</h2>
+                <div class="calendar-nav">
+                    <button class="nav-btn">&lt;</button>
+                    <button class="nav-btn">&gt;</button>
+                </div>
+            </div>
+            <div class="calendar-grid">
+                <div class="weekday">Domingo</div>
+                <div class="weekday">Segunda</div>
+                <div class="weekday">Terça</div>
+                <div class="weekday">Quarta</div>
+                <div class="weekday">Quinta</div>
+                <div class="weekday">Sexta</div>
+                <div class="weekday">Sábado</div>
+                
+                <div class="day"><span>1</span></div>
+                <div class="day"><span>2</span></div>
+                <div class="day"><span>3</span></div>
+                <div class="day"><span>4</span></div>
+                <div class="day"><span>5</span></div>
+                <div class="day"><span>6</span></div>
+                <div class="day"><span>7</span></div>
+                <div class="day"><span>8</span></div>
+                <div class="day"><span>9</span></div>
+                <div class="day"><span>10</span></div>
+                <div class="day"><span>11</span></div>
+                <div class="day"><span>12</span></div>
+                <div class="day"><span>13</span></div>
+                <div class="day"><span>14</span></div>
+                <div class="day"><span>15</span></div>
+                <div class="day"><span>16</span></div>
+                <div class="day"><span>17</span></div>
+                <div class="day"><span>18</span></div>
+                <div class="day"><span>19</span></div>
+                <div class="day"><span>20</span></div>
+                <div class="day"><span>21</span></div>
+                <div class="day"><span>22</span></div>
+                <div class="day"><span>23</span></div>
+                <div class="day"><span>24</span></div>
+                <div class="day"><span>25</span></div>
+                <div class="day"><span>26</span></div>
+                <div class="day"><span>27</span></div>
+                <div class="day"><span>28</span></div>
+                <div class="day"><span>29</span></div>
+                <div class="day"><span>30</span></div>
+                <div class="day"><span>31</span></div>
+            </div>
+
+            <div class="event-form">
+                <h3>Criar Novo Evento</h3>
+                <div class="form-group">
+                    <label for="event-title">Título</label>
+                    <input type="text" id="event-title" placeholder="Digite o título do evento">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="event-date">Data</label>
+                        <input type="date" id="event-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="event-time">Horário</label>
+                        <input type="time" id="event-time">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="event-description">Descrição</label>
+                    <textarea id="event-description" rows="3" placeholder="Digite a descrição do evento"></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button class="btn-cancel">Cancelar</button>
+                    <button class="btn-create">Criar Evento</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

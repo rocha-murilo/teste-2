@@ -1,0 +1,197 @@
+.calendar-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.calendar-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.calendar {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.calendar-header h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.calendar-nav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: #666;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.nav-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.weekday {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+    color: #666;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.day {
+    background-color: white;
+    min-height: 100px;
+    padding: 0.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: relative;
+}
+
+.day span {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.day:hover {
+    background-color: #f8f9fa;
+}
+
+.day.selected {
+    background-color: #e8f0fe;
+    border: 2px solid #4285f4;
+}
+
+.event-form {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border: 1px solid #e0e0e0;
+}
+
+.event-form h3 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-cancel,
+.btn-create {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-cancel {
+    background: none;
+    border: 1px solid #ddd;
+    color: #666;
+}
+
+.btn-create {
+    background-color: #4285f4;
+    border: none;
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-create:hover {
+    background-color: #3367d6;
+}
+
+@media (max-width: 768px) {
+    .calendar {
+        padding: 1rem;
+    }
+
+    .weekday {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    .day {
+        min-height: 80px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
